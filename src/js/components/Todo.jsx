@@ -11,18 +11,7 @@ const Todo = () => {
     setInput("");
   };
 
-  const eliminarTarea = (index) => {
-    const tareasDom = document.querySelectorAll(".tarea");
-    const tareaDom = tareasDom[index];
 
-    if (tareaDom) {
-      tareaDom.classList.add("removida");
-      setTimeout(() => {
-        const nuevas = tareas.filter((_, i) => i !== index);
-        setTareas(nuevas);
-      }, 300);
-    }
-  };
 
   return (
     <div className="contenedor">
